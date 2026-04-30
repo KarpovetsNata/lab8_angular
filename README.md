@@ -1,59 +1,69 @@
-# Lab8AngularTodo
+# Лабораторна робота №8
+## Тема: Розробка вебзастосунків Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.9.
+### Мета роботи
+Ознайомитися із Angular, розробкою вебзастосунків Angular за допомогою Angular CLI, Visual Studio Code та системи керування версіями Git і платформи GitHub.
 
-## Development server
+---
 
-To start a local development server, run:
+## Хід роботи
 
-```bash
-ng serve
-```
+### 1. Створення Angular-застосунку
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Було створено вебзастосунок Angular за допомогою Angular CLI:
+ng new lab8-angular-todo
 
-## Code scaffolding
+Запуск застосунку виконано командою: ng serve
+Після запуску застосунок відкрився за адресою: http://localhost:4200
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
+### 2. Реалізація списку завдань
 
-```bash
-ng generate component component-name
-```
+Було реалізовано застосунок "Список завдань", який дозволяє:
+- додавати нові завдання
+- відображати список завдань
+- позначати виконані завдання
+- видаляти завдання
+- фільтрувати список завдань
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
+### 3. Створення компонентів
+Було створено компонент: task-item
 
-```bash
-ng generate --help
-```
+Компонент відповідає за:
 
-## Building
+- відображення одного завдання
+- позначення виконання
+- видалення завдання
 
-To build the project run:
+---
+### 4. Реалізація фільтрації завдань
 
-```bash
-ng build
-```
+Було реалізовано фільтрацію:
+- всі завдання
+- активні завдання
+- виконані завдання
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
+### 5. Стилізація застосунку
+Було застосовано CSS стилі:
+- центрований інтерфейс
+- кнопки керування
+- оформлення списку завдань
+- оформлення виконаних завдань
 
-## Running unit tests
+---
+### 6. Компіляція production-версії застосунку
+Було виконано збірку застосунку: ng build
+У результаті створено папку:
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+dist/
+яка містить готову версію застосунку для розгортання.
 
-```bash
-ng test
-```
+---
+## Висновок
 
-## Running end-to-end tests
+У ході лабораторної роботи було створено Angular вебзастосунок "Список завдань".  
+Було освоєно роботу з Angular CLI, створення компонентів, обробку подій, передачу даних між компонентами, стилізацію інтерфейсу та фільтрацію даних.
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Було закріплено навички роботи із системою керування версіями Git та платформою GitHub.
